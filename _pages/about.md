@@ -2,8 +2,7 @@
 layout: about
 title: Home
 permalink: /
-nav: true
-nav_order: 1
+nav: false
 subtitle: Machine Learning Engineer at Railtown AI
 
 profile:
