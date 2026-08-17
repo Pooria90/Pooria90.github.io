@@ -1,15 +1,34 @@
-# updated website
+# Pooria Ashrafian
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Personal website for Pooria Ashrafian, built with [al-folio](https://github.com/alshedivat/al-folio) and deployed with GitHub Pages.
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Local development
 
+The site requires Ruby, Bundler, and the native-extension build tools. On Ubuntu/Debian, install them with:
 
+```bash
+sudo apt-get update
+sudo apt-get install ruby-full ruby-dev build-essential
+```
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
-* If you use this, I'd appreciate a link back either to this repo or my personal website so others can find this too. 
+Then install the Ruby dependencies inside the project and start Jekyll:
+
+```bash
+bundle config set --local path vendor/bundle
+bundle install
+bundle exec jekyll serve
+```
+
+The site is available at `http://localhost:4000/` while the development server is running.
+
+If `bundle install` reports `mkmf.rb can't find header files for ruby`, the Ruby development headers are missing; install `ruby-dev` as shown above and rerun `bundle install`.
+
+Node.js dependencies are not required to serve the site. Install them with `npm ci` when running formatting or visual tests.
+
+## Production build
+
+```bash
+npm ci
+npm run lint:prettier
+bundle exec jekyll build
+```
