@@ -7,7 +7,7 @@ subtitle: Machine Learning Engineer at Railtown AI
 
 profile:
   align: right
-  image: pooria-ashrafian.jpg
+  image: pooria.jpg
   image_circular: false
   more_info:
 
