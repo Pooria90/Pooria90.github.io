@@ -9,28 +9,29 @@ nav_order: 3
 
 ## Railtown AI Technologies
 
-**Machine Learning Engineer** · 2026–present
+**Machine Learning Engineer** · Jan 2026–present
 
-- Working on Railtracks, a Python-based agent development kit.
-- Developing and maintaining tools for agentic systems and applied ML workflows.
-- Exploring infrastructure and engineering patterns for production-oriented AI systems.
+- Develop and maintain Railtracks, a Python framework for LLM-powered agents and applications.
+- Build core agent and tool abstractions, guardrails, evaluation workflows, and observability features.
+- Design developer-facing APIs, integrations, tests, and technical documentation.
 
 ---
 
 ## Prenuvo
 
-**Machine Learning / Medical Imaging Intern** · 2024–2025
+**Machine Learning Intern** · Sep 2024–Dec 2025
 
-- Worked on medical imaging algorithms for MRI-based quantitative analysis.
-- Contributed to vessel measurement and imaging analysis workflows.
-- Built applied ML and image-processing tools in a clinical imaging context.
+- Developed MRI models for aortic segmentation, diameter measurement, and aneurysm detection.
+- Built heart segmentation and age-estimation models and diffusion models for synthetic brain-vessel MRI.
+- Productionized training and validation workflows with AWS SageMaker, ZenML, MLflow, testing, and versioning.
 
 ---
 
 ## University of British Columbia
 
-**M.A.Sc. in Biomedical Engineering** · 2023–2025
+**Research Assistant / M.A.Sc. in Biomedical Engineering** · Jan 2023–Aug 2025<br>
+**Teaching Assistant** · Sep 2023–Aug 2025
 
-- Researched synthetic data augmentation for cardiac ultrasound segmentation.
-- Worked with conditional diffusion models for biomedical image analysis.
-- Served as a research assistant and teaching assistant.
+- Developed conditional diffusion models for synthetic echocardiograms and segmentation data augmentation.
+- Ran large-scale multi-GPU experiments on UBC's Sockeye cluster; published the work at MICCAI and on arXiv.
+- Taught data science, statistical inference, and applied statistics in R.
